@@ -1,0 +1,185 @@
+body {
+	padding-top: 50px;
+}
+
+/* NAVIGATION
+================================================ */
+.navbar .navbar-header span {
+	font-size: 25px;
+}
+
+.nav li {
+	font-size: 18px;
+}
+
+.nav li .glyphicon {
+	padding-right: 10px;
+}
+
+.nav span .red {
+	color: red;
+}
+
+/* HOME CONTENT
+================================================ */
+.content {
+	background-color: rgba(119, 116, 115, 0.4);
+	padding-bottom: 50px;
+}
+
+#presentation, #films, #news {
+	background-color: white;
+	margin: 30px auto;
+	border-radius: 8px;
+}
+
+#presentation p, #films p, #news p {
+	text-align: justify;
+}
+
+#presentation h1, #films h1, #news h1 {
+	padding: 20px 0;
+	border-bottom: 4px solid rgba(119, 116, 115, 0.4);
+}
+
+#presentation h1, #films h1, #news h1, .header-image img {
+	text-align: center;
+}
+
+.header-image img {
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+#presentation .smaller {
+	padding: 5px 20px 20px 20px;
+}
+
+#presentation .smallest {
+	width: 80%;
+	margin: auto;
+}
+
+#presentation p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+#films p {
+	font-size: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: right;
+}
+
+#films a {
+	color: rgb(119,116,115);
+}
+
+#news .smaller {
+	padding: 0 20px;
+}
+
+#news p {
+	font-size: 14px;
+	padding: 5px 0;
+}
+
+#news h2 {
+	font-size: 18px;
+	margin-bottom: 2px;
+}
+
+/* HEADER CAROUSEL
+================================================ */
+#header-carousel {
+	height: 700px;
+	background-image: url('img/cinema.png');
+	display: table-cell;
+	vertical-align: middle;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+#header-carousel .carousel-content {
+	color: white;
+	margin: auto;
+}
+
+#header-carousel.item {
+	max-width: 900px;
+}
+
+#header-carousel .item {
+	width: 60%;
+	margin:auto;
+	border: 10px solid white;
+	background-color: rgba(119, 116, 115, 0.5);
+	padding: 50px;
+}
+
+/* FILMS CAROUSEL
+================================================ */
+#films-carousel .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: black;
+}
+
+#films-carousel img {
+	max-width: 40%;
+	margin: auto;
+}
+
+#films-carousel h2 {
+	font-size: 15px;
+	margin-bottom: 2px;
+}
+
+#films-carousel .carousel-indicators li {
+	border: 1px solid rgb(119, 116, 115);
+}
+
+#films-carousel .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: rgb(119, 116, 115);
+}
+
+#films-carousel .carousel-control {
+	background: none;
+}
+
+/* FOOTER
+================================================ */
+footer {
+	border-top: 1px solid grey;
+	padding: 10px;
+	background-color: rgba(119, 116, 115, 0.3);
+}
+
+footer h2, .footer-left h4, .footer-right h4 {
+	text-transform: uppercase;
+	color: white;
+}
+
+footer h2, .footer-image {
+	text-align: center;
+}
+
+footer img {
+	max-width: 150px;
+	margin: auto;
+}
+
+.footer-left {
+	text-align: right;
+}
+
+
+.footer-left li {
+	font-style: italic;
+	list-style-type: none;
+}
