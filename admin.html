@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/pages.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:500,600" rel="stylesheet">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+
+<body>
+	<div class="container-fluid global">
+
+		<!-- NAVIGATION
+		============================================================ -->
+		<header>
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="admin.html">Panneau d'administration</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon glyphicon-eye-open"></span>Voir le site</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- MENU
+		============================================================ -->
+		<div class="sidebar">
+			<ul class="nav nav-pills nav-stacked pull-left">
+				<li><h3>Films</h3></li>
+				<li class="active"><a href="#edit-films" data-toggle="tab">Liste des films</a></li>
+				<li><a href="#add-film" data-toggle="tab">Ajouter un film</a></li>
+				<li><h3>Actus</h3></li>
+				<li><a href="#edit-news" data-toggle="tab">Liste des actus</a></li>
+				<li><a href="#add-news" data-toggle="tab">Ajouter une actu</a></li>
+			</ul>
+
+			<div class="tab-content admin-content">
+				<!-- LIST FILM -->
+				<div class="tab-pane active" id="edit-films">
+					<table class="table table-striped">
+						<caption>
+							<h2>Liste des films</h2>
+						</caption>
+						<thead>
+							<th>Titre du film</th>
+							<th>Diffusion</th>
+							<th></th>
+						</thead>
+						<tbody>
+							<tr class="success">
+								<td>
+									<p>Enter the void (2009) - <em>Gaspard Noé</em></p>
+								</td>
+								<td>
+									<p>5 août, 18h00</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>Holy Motors (2012) - <em>Leos Carax</em></p>
+								</td>
+								<td>
+									<p>5 août, 20h30</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									<p>Eraserhead (1978) - <em>David Lynch</em></p>
+								</td>
+								<td>
+									<p>5 août, 23h10</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>Melancholia (2011) - <em>Lars von Trier</em></p>
+								</td>
+								<td>
+									<p>6 août, 18h00</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									<p>Into the Wild (2007) - <em>Sean Penn</em></p>
+								</td>
+								<td>
+									<p>6 août, 20h15</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>Réalité (2015) - <em>Quentin Dupieux</em></p>
+								</td>
+								<td>
+									<p>6 août, 22h45</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									<p>Dead Man (1995) - <em>Jim Jarmusch</em></p>
+								</td>
+								<td>
+									<p>7 août, 18h00</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>Vol au dessus d'un nid de coucou - <em>Milos Forman</em></p>
+								</td>
+								<td>
+									<p>7 août, 20h00</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									<p>Enemy (2014) - <em>Denis Villeneuve</em></p>
+								</td>
+								<td>
+									<p>7 août, 22h45</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>Only Lovers Left Alive (2014) - <em>Jim Jarmusch</em></p>
+								</td>
+								<td>
+									<p>8 août, 18h00</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									<p>Big Fish (2003) - <em>Tim Burton</em></p>
+								</td>
+								<td>
+									<p>8 août, 20h10</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>La Haine (1995) - <em>Mathieu Kassovitz</em></p>
+								</td>
+								<td>
+									<p>8 août, 22h25</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- ADD FILM -->
+				<div class="tab-pane" id="add-film">
+					<h2>Ajouter un film</h2>
+					<form class="add-film">
+							<div class="form-group">
+								<label for="add-title">Titre</label>
+ 								<input type="text" class="form-control" id="add-title" placeholder="Titre du film" />
+							</div>
+							<div class="form-group">
+								<label for="add-author">Auteur</label>
+ 								<input type="text" class="form-control" id="add-author" placeholder="Auteur" />
+							</div>
+							<div class="form-group">
+								<label for="add-synopsis">Synopsis</label>
+ 								 <textarea class="form-control" id="add-synopsis" placeholder="Synopsis"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="add-diffusion">Diffusion</label>
+								 <input type="password" class="form-control" id="add-diffusion" placeholder="Date et heure de diffusion" />
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-default">Ajouter</button>
+							</div>
+					</form>
+				</div>
+
+				<!-- LIST NEWS -->
+				<div class="tab-pane" id="edit-news">
+					<table class="table table-striped">
+						<caption>
+							<h2>Liste des actualités</h2>
+						</caption>
+						<thead>
+							<th>Actualité</th>
+							<th></th>
+						</thead>
+						<tbody>
+							<tr class="success">
+								<td>
+									<p>Visite officielle de Denis Villeneuve</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									<p>Discutons ensemble</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+							<tr class="success">
+								<td>
+									<p>Le Festival des Films de Plein Air aura lieu !</p>
+								</td>
+								<td>
+									<p><a href="#">Modifier</a></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- ADD NEWS -->
+				<div class="tab-pane" id="add-news">
+					<h2>Ajouter une actualité</h2>
+					<form class="add-film">
+							<div class="form-group">
+								<label for="title-news">Titre</label>
+ 								<input type="email" class="form-control" id="title-news" placeholder="Titre" />
+							</div>
+							<div class="form-group">
+								<label for="content-news">Contenu</label>
+ 								 <textarea class="form-control" id="content-news" placeholder="Contenu de l'actualité"></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-default">Ajouter</button>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

@@ -55,11 +55,11 @@
 
 /* FILMS
 ================================================ */
-.table, .table h2 {
+.films-calendar .table, .table h2 {
 	text-align: center;
 }
 
-.tab-content {
+.films-calendar .tab-content {
 	width: 60%;
 	margin: auto;
 }
@@ -131,4 +131,24 @@
 
 .contact-content {
 	padding-bottom: 50px;
+}
+
+/* PAGE ADMIN
+================================================ */
+.sidebar {
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sidebar .admin-content {
+  padding-left: 300px;
+  padding-right: 100px;
+}
+
+#add-film textarea, #add-news textarea {
+  height: 150px;
 }
