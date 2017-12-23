@@ -2,9 +2,23 @@ body {
 	padding-top: 50px;
 }
 
+.global {
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.global h1, .global h2, .global h3, .navbar {
+	font-family: 'Indie Flower', 'Old Standard TT', serif;
+}
+
+
 /* NAVIGATION
 ================================================ */
-.navbar .navbar-header span {
+.navbar {
+	padding: 0 50px;
+}
+
+.navbar .navbar-header a {
 	font-size: 25px;
 }
 
@@ -16,39 +30,32 @@ body {
 	padding-right: 10px;
 }
 
-.nav span .red {
-	color: red;
-}
-
 /* HOME CONTENT
 ================================================ */
 .content {
-	background-color: rgba(119, 116, 115, 0.4);
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 }
 
 #presentation, #films, #news {
-	background-color: white;
-	margin: 30px auto;
-	border-radius: 8px;
+	margin: 20px auto;
+	padding: 20px 50px;
 }
 
 #presentation p, #films p, #news p {
 	text-align: justify;
 }
 
-#presentation h1, #films h1, #news h1 {
+#presentation h2, #films h2, #news h2 {
+	font-size: 36px;
 	padding: 20px 0;
 	border-bottom: 4px solid rgba(119, 116, 115, 0.4);
-}
-
-#presentation h1, #films h1, #news h1, .header-image img {
 	text-align: center;
 }
 
 .header-image img {
 	padding-bottom: 20px;
 	width: 100%;
+	text-align: center;
 }
 
 #presentation .smaller {
@@ -73,7 +80,7 @@ body {
 }
 
 #films a {
-	color: rgb(119,116,115);
+	color: rgb(119, 116, 115);
 }
 
 #news .smaller {
@@ -85,7 +92,7 @@ body {
 	padding: 5px 0;
 }
 
-#news h2 {
+#news h3 {
 	font-size: 18px;
 	margin-bottom: 2px;
 }
@@ -93,8 +100,8 @@ body {
 /* HEADER CAROUSEL
 ================================================ */
 #header-carousel {
-	height: 700px;
-	background-image: url('img/cinema.png');
+	height: 600px;
+	background-image: url('../img/cinema.png');
 	display: table-cell;
 	vertical-align: middle;
 	min-width: 100%;
@@ -160,7 +167,7 @@ footer {
 	background-color: rgba(119, 116, 115, 0.3);
 }
 
-footer h2, .footer-left h4, .footer-right h4 {
+footer h2, .footer-left h3, .footer-right h3 {
 	text-transform: uppercase;
 	color: white;
 }
@@ -171,15 +178,14 @@ footer h2, .footer-image {
 
 footer img {
 	max-width: 150px;
-	margin: auto;
 }
 
 .footer-left {
 	text-align: right;
 }
 
-
-.footer-left li {
-	font-style: italic;
-	list-style-type: none;
+.footer-left h5, .footer-right label {
+	font-weight: bold;
+	color: black;
+	line-height: 3px;
 }

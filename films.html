@@ -2,25 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/style.css" />
-		<link rel="stylesheet" href="assets/pages.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/pages.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:500,600" rel="stylesheet">
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</head>
 
 <body>
-	<header>
+	<div class="container-fluid global">
 
-	<!-- NAVIGATION
-	============================================================ -->
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
+		<!-- NAVIGATION
+		============================================================ -->
+		<header>
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
@@ -37,49 +37,43 @@
 					</ul>
 				</div>
 			</div>
-		</div>   
+		</header>
 
-	</header>
-
-	<!-- CALENDAR
-	============================================================ -->
-	<section class="films">
-	<div class="films-header">
-		<h1>Tous les films</h1>
-	</div>
-	<div class="films-presentation">
-		<p>Retrouvez ici l'ensemble des films d'auteur proposés à la diffusions tout au long de ce festival. Ceux ci vous sont proposés dans un calendrier, pour une meilleure visibilité des projections quotidiennes. Sur chaque film, vous pouvez vous pré-inscrire pour nous indiquer votre présence.</p>
-	</div>
-	<div class="films-calendar">
-		<ul class="nav nav-tabs nav-justified">
-			<li class="active"><a href="#day1" data-toggle="tab">5 août</a></li>
-			<li><a href="#day2" data-toggle="tab">6 août</a></li>
-			<li><a href="#day3" data-toggle="tab">7 août</a></li>
-			<li><a href="#day4" data-toggle="tab">8 août</a></li>
-		</ul>
-
-		<div class="tab-content">
-			<div class="tab-pane fade in active" id="day1">
-				<!-- Calendrier 5 août -->
-				<div class="col-md-offset-2 col-md-8 col-xs-12">
-					<table class="table table-striped">
-						<caption>
-							<h2>Horaires de diffusions du 5 août</h2>
-						</caption>
-						<thead>
-							<tr>
-								<th>Ecran 1</th>
-								<th>Ecran 2</th>
- 							</tr>
-						</thead>
-						<tbody>
-							<tr class="success">
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Enter the void (2009) - <em>Gaspard Noé</em><br />
-									<button data-toggle="modal" href="#Film1" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film1">
-										<div class="modal-dialog">
-											<div class="modal-content">
+		<!-- CALENDAR
+		============================================================ -->
+		<section class="films">
+			<div class="films-header">
+				<h1>Tous les films</h1>
+			</div>
+			<div class="films-preface">
+				<p>Retrouvez ici l'ensemble des films d'auteur proposés à la diffusions tout au long de ce festival. Ceux ci vous sont proposés dans un calendrier, pour une meilleure visibilité des projections quotidiennes. Sur chaque film, vous pouvez vous pré-inscrire pour nous indiquer votre présence.</p>
+			</div>
+			<div class="films-calendar">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#day1" data-toggle="tab">5 août</a></li>
+					<li><a href="#day2" data-toggle="tab">6 août</a></li>
+					<li><a href="#day3" data-toggle="tab">7 août</a></li>
+					<li><a href="#day4" data-toggle="tab">8 août</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="day1">
+						<!-- 05/08 CALENDAR -->
+						<table class="table table-striped">
+							<caption>
+								<h2>Horaires de diffusions du 5 août</h2>
+							</caption>
+							<thead>
+								<th></th>
+							</thead>
+							<tbody>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 18:00</p>
+										<p>Enter the void (2009) - <em>Gaspard Noé</em></p>
+										<button data-toggle="modal" href="#Film1" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film1">
+											<div class="modal-dialog">
+												<div class="modal-content">
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal">x</button>
 													<h4 class="modal-title">Enter the void</h4>
@@ -89,776 +83,706 @@
 														<img src="assets/img/EnterVoid.jpg" alt="Enter the void" />
 													</div>
 													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Gaspar Noé<br />
-        											<strong>Type</strong> : Drame / Fantastique<br />
-        											<strong>Année de sortie</strong> : 2009<br />
-        											<strong>Durée</strong> : 2h41mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											Oscar et sa soeur Linda habitent depuis peu à Tokyo. Oscar survit de petits deals de drogue alors que Linda est stripteaseuse dans une boite de nuit.
-        											</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film2" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film2">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
-														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Dead Man (1995) - <em>Jim Jarmusch</em><br />
-									<button data-toggle="modal" href="#Film3" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film3">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Dead Man</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/DeadMan.jpg" alt="Dead Man" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Jim Jarmusch<br />
-        											<strong>Type</strong> : Drame / Fantastique<br />
-        											<strong>Année de sortie</strong> : 1995<br />
-        											<strong>Durée</strong> : 2h01mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											2ème moitié du 19e siècle. Un jeune comptable en route pour l'Ouest américain entreprend un voyage initiatique où il devient un hors-la-loi traqué.
-        											</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film4" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film4">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
-														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>							
-							</tr>
-
-							<tr class="active">
-								<td><strong>Heure de diffusion : 20:30</strong><br />
-									Holy Motors (2012) - <em>Leos Carax</em><br />
-									<button data-toggle="modal" href="#Film7" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film7">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Holy Motors</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/HolyMotors.jpg" alt="Holy Motors" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Milos Forman<br />
-        											<strong>Type</strong> : Drame / Fantastique<br />
-        											<strong>Année de sortie</strong> : 2012<br />
-        											<strong>Durée</strong> : 1h55mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											De l'aube à la nuit, quelques heures dans l'existence de Monsieur Oscar, un être qui voyage de vie en vie. Tour à tour grand patron, meurtrier, mendiante, créature monstrueuse, père de famille... M. Oscar semble jouer des rôles, plongeant en chacun tout entier - mais où sont les caméras ? Il est seul, uniquement accompagné de Céline, longue dame blonde aux commandes de l'immense machine qui le transporte dans Paris et autour. Tel un tueur consciencieux allant de gage en gage. À la poursuite de la beauté du geste. Du moteur de l'action. Des femmes et des fantômes de sa vie. Mais où est sa maison, sa famille, son repos ?
-        											</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film8" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film8">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
-														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td><strong>Heure de diffusion : 20:00</strong><br />
-									Vol au dessus d'un nid de coucou - <em>Milos Forman</em><br />
-									<button data-toggle="modal" href="#Film5" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film5">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Vol au dessus d'un nid de coucou</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/VolCoucou.jpg" alt="Vol au dessus d'un nid de coucou" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Milos Forman<br />
-        											<strong>Type</strong> : Drame<br />
-        											<strong>Année de sortie</strong> : 1975<br />
-        											<strong>Durée</strong> : 2h13mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											Pour échapper à la prison, Randall P. McMurphy se fait volontairement interner dans une clinique psychiatrique. Il y découvre injustice et oppression.
-        											</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film6" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film6">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
-														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>									
-							</tr>
-
-							<tr class="success">
-								<td><strong>Heure de diffusion : 23:10</strong><br />
-									Eraserhead (1978) - <em>David Lynch</em><br />
-									<button data-toggle="modal" href="#Film9" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film9">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Eraserhead</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/Eraserhead.jpg" alt="Eraserhead" />
-													</div>
-													<div class="film-description">
 														<p>
-        												<strong>Réaliseateur</strong> : David Lynch<br />
-        												<strong>Type</strong> : Essai / Epouvante<br />
-        												<strong>Année de sortie</strong> : 1978<br />
-        												<strong>Durée</strong> : 1h29mn
-        												</p>
-        												<p>
-        												<strong>Synopsis</strong> :<br />
-        												Un homme est abandonné par son amie qui lui laisse la charge d'un enfant prématuré, fruit de leur union. Il s'enfonce dans un univers fantasmatique pour fuir cette cruelle réalité.
-        												</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film10" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film10">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
-														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td><strong>Heure de diffusion : 22:45</strong><br />
-									Enemy (2014) - <em>Denis Villeneuve</em><br />
-									<button data-toggle="modal" href="#Film11" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film11">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Enemy</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/Enemy.jpg" alt="Enemy" />
-													</div>
-													<div class="film-description">
+														<strong>Réalisateur</strong> : Gaspar Noé<br />
+														<strong>Type</strong> : Drame / Fantastique<br />
+														<strong>Année de sortie</strong> : 2009<br />
+														<strong>Durée</strong> : 2h41mn
+														</p>
 														<p>
-        												<strong>Réaliseateur</strong> : Denis Villeneuve<br />
-        												<strong>Type</strong> : Thriller<br />
-        												<strong>Année de sortie</strong> : 2014<br />
-        												<strong>Durée</strong> : 1h30mn
-        												</p>
-        												<p>
-        												<strong>Synopsis</strong> :<br />
-        												Adam mène une vie paisible avec sa fiancée Mary. Un jour, il 	découvre son sosie parfait en la personne d’Anthony et il ressent un trouble profond.
-        												</p>
+														<strong>Synopsis</strong> :<br />
+														Oscar et sa soeur Linda habitent depuis peu à Tokyo. Oscar survit de petits deals de drogue alors que Linda est stripteaseuse dans une boite de nuit.
+														</p>
+													</div>
+												</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register1" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<button data-toggle="modal" href="#Film12" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film12">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+									</td>
+								</tr>
+								<tr class="active">
+									<td>
+										<p class="time">Heure de diffusion : 20:30</p>
+										<p>Holy Motors (2012) - <em>Leos Carax</em></p>
+										<button data-toggle="modal" href="#Film2" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film2">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Holy Motors</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/HolyMotors.jpg" alt="Holy Motors" />
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-
-			<div class="tab-pane fade" id="day2">
-				<!-- Calendrier 6 août -->
-				<div class="col-md-offset-2 col-md-8 col-xs-12">
-					<table class="table table-striped">
-						<caption>
-							<h2>Horaires de diffusions du 6 août</h2>
-						</caption>
-						<thead>
-							<tr>
-								<th>Ecran 1</th>
-								<th>Ecran 2</th>
- 							</tr>
-						</thead>
-						<tbody>
-							<tr class="success">
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Melancholia (2011) - <em>Lars von Trier</em><br />
-									<button data-toggle="modal" href="#Film13" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film13">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Melancholia</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/Melancholia.jpg" alt="Melancholia" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Lars von Trier<br />
-        											<strong>Type</strong> : Drame<br />
-        											<strong>Année de sortie</strong> : 2011<br />
-        											<strong>Durée</strong> : 2h10mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											À l'occasion de leur mariage, Justine et Michael donnent une somptueuse réception dans la maison de la soeur de Justine et de son beau-frère.
-        											</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film14" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film14">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Milos Forman<br />
+															<strong>Type</strong> : Drame / Fantastique<br />
+															<strong>Année de sortie</strong> : 2012<br />
+															<strong>Durée</strong> : 1h55mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															De l'aube à la nuit, quelques heures dans l'existence de Monsieur Oscar, un être qui voyage de vie en vie. Tour à tour grand patron, meurtrier, mendiante, créature monstrueuse, père de famille... M. Oscar semble jouer des rôles, plongeant en chacun tout entier - mais où sont les caméras ? Il est seul, uniquement accompagné de Céline, longue dame blonde aux commandes de l'immense machine qui le transporte dans Paris et autour. Tel un tueur consciencieux allant de gage en gage. À la poursuite de la beauté du geste. Du moteur de l'action. Des femmes et des fantômes de sa vie. Mais où est sa maison, sa famille, son repos ?
+															</p>
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Only Lovers Left Alive (2014) - <em>Jim Jarmusch</em><br />
-									<button data-toggle="modal" href="#Film15" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film15">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Only Lovers Left Alive</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/OnlyAlive.jpg" alt="Only Lovers Left Alive" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Jim Jarmusch<br />
-        											<strong>Type</strong> : Drame / Romance<br />
-        											<strong>Année de sortie</strong> : 2014<br />
-        											<strong>Durée</strong> : 2h03mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											Dans les villes romantiques et désolées que sont Détroit et Tanger, Adam, un musicien underground, retrouve Eve, son amante. Tous 2 sont des vampires.
-        											</p>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<button data-toggle="modal" href="#Film16" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film16">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+										<button data-toggle="modal" href="#Register2" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register2">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
 												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 23:10</p>
+										<p>Eraserhead (1978) - <em>David Lynch</em></p>
+										<button data-toggle="modal" href="#Film3" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film3">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Eraserhead</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/Eraserhead.jpg" alt="Eraserhead" />
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>							
-							</tr>
-
-							<tr class="active">
-								<td><strong>Heure de diffusion : 20:15</strong><br />
-									Into the Wild (2007) - <em>Sean Penn</em><br />
-									<button data-toggle="modal" href="#Film17" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film17">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Into the Wild</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/IntoWild.jpg" alt="Into the Wild" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Sean Penn<br />
-        											<strong>Type</strong> : Biopic /Drame<br />
-        											<strong>Année de sortie</strong> : 2007<br />
-        											<strong>Durée</strong> : 2h28mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											Christopher a 22 ans et une soif d'absolu et de liberté sans limites. Il plaque tout du jour au lendemain pour partir à l'aventure.
-        											</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film18" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film18">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : David Lynch<br />
+															<strong>Type</strong> : Essai / Epouvante<br />
+															<strong>Année de sortie</strong> : 1978<br />
+															<strong>Durée</strong> : 1h29mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Un homme est abandonné par son amie qui lui laisse la charge d'un enfant prématuré, fruit de leur union. Il s'enfonce dans un univers fantasmatique pour fuir cette cruelle réalité.
+															</p>
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td><strong>Heure de diffusion : 20:10</strong><br />
-									Big Fish (2003) - <em>Tim Burton</em><br />
-									<button data-toggle="modal" href="#Film19" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film19">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Big Fish</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/BigFish.jpg" alt="Big Fish" />
-													</div>
-													<div class="film-description">
-													<p>
-        											<strong>Réaliseateur</strong> : Tim Burton<br />
-        											<strong>Type</strong> : Aventure / Fantastique<br />
-        											<strong>Année de sortie</strong> : 2003<br />
-        											<strong>Durée</strong> : 2h05mn
-        											</p>
-        											<p>
-        											<strong>Synopsis</strong> :<br />
-        											Will Bloom a toujours aimé les histoires loufoques de son père. Plusieurs années après leur dernière dispute, Will va voir son père en fin de vie.
-        											</p>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<button data-toggle="modal" href="#Film20" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film20">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+										<button data-toggle="modal" href="#Register3" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register3">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
 												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Votre nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="tab-pane fade" id="day2">
+						<!-- 06/08 CALENDAR -->
+						<table class="table table-striped">
+							<caption>
+								<h2>Horaires de diffusions du 6 août</h2>
+							</caption>
+							<thead>
+								<tr>
+									<th></th>
+	 							</tr>
+							</thead>
+							<tbody>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 18:00</p>
+										<p>Melancholia (2011) - <em>Lars von Trier</em></p>
+										<button data-toggle="modal" href="#Film4" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film4">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Melancholia</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/Melancholia.jpg" alt="Melancholia" />
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>									
-							</tr>
-
-							<tr class="success">
-								<td><strong>Heure de diffusion : 22:45</strong><br />
-									Réalité (2015) - <em>Quentin Dupieux</em><br />
-									<button data-toggle="modal" href="#Film21" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film21">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Réalité</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/Realite.jpg" alt="Réalité" />
-													</div>
-													<div class="film-description">
-														<p>
-        												<strong>Réaliseateur</strong> : Quentin Dupieux<br />
-        												<strong>Type</strong> : Comédie dramatique<br />
-        												<strong>Année de sortie</strong> : 2015<br />
-        												<strong>Durée</strong> : 1h27mn
-        												</p>
-        												<p>
-        												<strong>Synopsis</strong> :<br />
-        												Jason veut réaliser un film d'horreur, son producteur le finance à la seule condition qu'il trouve le meilleur gémissement de l'histoire du cinéma en 48h.
-        												</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<button data-toggle="modal" href="#Film22" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film22">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
-												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Lars von Trier<br />
+															<strong>Type</strong> : Drame<br />
+															<strong>Année de sortie</strong> : 2011<br />
+															<strong>Durée</strong> : 2h10mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															À l'occasion de leur mariage, Justine et Michael donnent une somptueuse réception dans la maison de la soeur de Justine et de son beau-frère.
+															</p>
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td><strong>Heure de diffusion : 22:25</strong><br />
-									La Haine (1995) - <em>Mathieu Kassovitz</em><br />
-									<button data-toggle="modal" href="#Film23" class="btn btn-info">Synopsis</button>
-									<div class="modal fade" id="Film23">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">La Haine</h4>
-												</div>
-												<div class="modal-body">
-													<div class="film-image">
-														<img src="assets/img/LaHaine.jpg" alt="La Haine" />
-													</div>
-													<div class="film-description">
-														<p>
-        												<strong>Réaliseateur</strong> : Mathieu Kassovitz<br />
-        												<strong>Type</strong> : Drame<br />
-        												<strong>Année de sortie</strong> : 1995<br />
-        												<strong>Durée</strong> : 1h38mn
-        												</p>
-        												<p>
-        												<strong>Synopsis</strong> :<br />
-        												Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils vont vivre la journée la plus importante de leur vie après une nuit d'émeutes provoquée par le passage à tabac d'Abdel Ichah par un inspecteur de police lors d'un interrogatoire.
-        												</p>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<button data-toggle="modal" href="#Film24" class="btn btn-success">S'inscrire</button>
-									<div class="modal fade" id="Film24">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">x</button>
-													<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+										<button data-toggle="modal" href="#Register4" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register4">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
 												</div>
-												<div class="modal-body">
-													<form action="#">
-														<div class="form-group">
-															<label for="nom">Nom</label>
-															<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="active">
+									<td>
+										<p class="time">Heure de diffusion : 20:15</p>
+										<p>Into the Wild (2007) - <em>Sean Penn</em></p>
+										<button data-toggle="modal" href="#Film5" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film5">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Into the Wild</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/IntoWild.jpg" alt="Into the Wild" />
 														</div>
-														<button type="submit" class="btn btn-default">Envoyer</button>
-													</form>
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Sean Penn<br />
+															<strong>Type</strong> : Biopic /Drame<br />
+															<strong>Année de sortie</strong> : 2007<br />
+															<strong>Durée</strong> : 2h28mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Christopher a 22 ans et une soif d'absolu et de liberté sans limites. Il plaque tout du jour au lendemain pour partir à l'aventure.
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
+										<button data-toggle="modal" href="#Register5" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register5">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
 
-			<div class="tab-pane fade" id="day3">
-				<!-- Calendrier du 7 août -->
-				<div class="col-md-offset-2 col-md-8 col-xs-12">
-					<table class="table table-striped">
-						<caption>
-							<h2>Horaires de diffusions du 7 août</h2>
-						</caption>
-						<thead>
-							<tr>
-								<th>Ecran 1</th>
-								<th>Ecran 2</th>
- 							</tr>
-						</thead>
-						<tbody>
-							<tr class="success">
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Melancholia (2011) - <em>Lars von Trier</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Only Lovers Left Alive (2014) - <em>Jim Jarmusch</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>							
-							</tr>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 22:45</p>
+										<p>Réalité (2015) - <em>Quentin Dupieux</em></p>
+										<button data-toggle="modal" href="#Film6" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film6">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Réalité</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/Realite.jpg" alt="Réalité" />
+														</div>
+														<div class="film-description">
+															<p>
+        													<strong>Réalisateur</strong> : Quentin Dupieux<br />
+        													<strong>Type</strong> : Comédie dramatique<br />
+        													<strong>Année de sortie</strong> : 2015<br />
+        													<strong>Durée</strong> : 1h27mn
+        													</p>
+        													<p>
+        													<strong>Synopsis</strong> :<br />
+        													Jason veut réaliser un film d'horreur, son producteur le finance à la seule condition qu'il trouve le meilleur gémissement de l'histoire du cinéma en 48h.
+        													</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register6" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register6">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-							<tr class="active">
-								<td><strong>Heure de diffusion : 20:15</strong><br />
-									Into the Wild (2007) - <em>Sean Penn</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-								<td><strong>Heure de diffusion : 20:10</strong><br />
-									Big Fish (2003) - <em>Tim Burton</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>									
-							</tr>
+					<div class="tab-pane fade" id="day3">
+						<!-- 07/08 CALENDAR -->
+						<table class="table table-striped">
+							<caption>
+								<h2>Horaires de diffusions du 7 août</h2>
+							</caption>
+							<thead>
+								<tr>
+									<th></th>
+	 							</tr>
+							</thead>
+							<tbody>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 18:00</p>
+										<p>Dead Man (1995) - <em>Jim Jarmusch</em></p>
+										<button data-toggle="modal" href="#Film7" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film7">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Dead Man</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/DeadMan.jpg" alt="Dead Man" />
+														</div>
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Jim Jarmusch<br />
+															<strong>Type</strong> : Drame / Fantastique<br />
+															<strong>Année de sortie</strong> : 1995<br />
+															<strong>Durée</strong> : 2h01mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															2ème moitié du 19e siècle. Un jeune comptable en route pour l'Ouest américain entreprend un voyage initiatique où il devient un hors-la-loi traqué.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register7" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register7">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="active">
+									<td>
+										<p class="time">Heure de diffusion : 20:00</p>
+										<p>Vol au dessus d'un nid de coucou - <em>Milos Forman</em></p>
+										<button data-toggle="modal" href="#Film8" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film8">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Vol au dessus d'un nid de coucou</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/VolCoucou.jpg" alt="Vol au dessus d'un nid de coucou" />
+														</div>
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Milos Forman<br />
+															<strong>Type</strong> : Drame<br />
+															<strong>Année de sortie</strong> : 1975<br />
+															<strong>Durée</strong> : 2h13mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Pour échapper à la prison, Randall P. McMurphy se fait volontairement interner dans une clinique psychiatrique. Il y découvre injustice et oppression.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register8" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register8">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
 
-							<tr class="success">
-								<td><strong>Heure de diffusion : 22:45</strong><br />
-									Réalité (2015) - <em>Quentin Dupieux</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-								<td><strong>Heure de diffusion : 22:25</strong><br />
-									La Haine (1995) - <em>Mathieu Kassovitz</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>				
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 22:45</p>
+										<p>Enemy (2014) - <em>Denis Villeneuve</em></p>
+										<button data-toggle="modal" href="#Film9" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film9">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Enemy</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/Enemy.jpg" alt="Enemy" />
+														</div>
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Denis Villeneuve<br />
+															<strong>Type</strong> : Thriller<br />
+															<strong>Année de sortie</strong> : 2014<br />
+															<strong>Durée</strong> : 1h30mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Adam mène une vie paisible avec sa fiancée Mary. Un jour, il découvre son sosie parfait en la personne d’Anthony et il ressent un trouble profond.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register9" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register9">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-			</div>
-
-			<div class="tab-pane fade" id="day4">
-				<!-- Calendrier du 8 août -->
-				<div class="col-md-offset-2 col-md-8 col-xs-12">
-					<table class="table table-striped">
-						<caption>
-							<h2>Horaires de diffusions du 8 août</h2>
-						</caption>
-						<thead>
-							<tr>
-								<th>Ecran 1</th>
-								<th>Ecran 2</th>
- 							</tr>
-						</thead>
-						<tbody>
-							<tr class="success">
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Melancholia (2011) - <em>Lars von Trier</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-								<td><strong>Heure de diffusion : 18:00</strong><br />
-									Only Lovers Left Alive (2014) - <em>Jim Jarmusch</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>							
-							</tr>
-
-							<tr class="active">
-								<td><strong>Heure de diffusion : 20:15</strong><br />
-									Into the Wild (2007) - <em>Sean Penn</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-								<td><strong>Heure de diffusion : 20:10</strong><br />
-									Big Fish (2003) - <em>Tim Burton</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>									
-							</tr>
-
-							<tr class="success">
-								<td><strong>Heure de diffusion : 22:45</strong><br />
-									Réalité (2015) - <em>Quentin Dupieux</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-								<td><strong>Heure de diffusion : 22:25</strong><br />
-									La Haine (1995) - <em>Mathieu Kassovitz</em><br />
-									<button data-toggle="modal" href="#" class="btn btn-info">Synopsis</button>
-									<button data-toggle="modal" href="#" class="btn btn-success">S'inscrire</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="tab-pane fade" id="day4">
+						<!-- 08/08 CALENDAR -->
+						<table class="table table-striped">
+							<caption>
+								<h2>Horaires de diffusions du 8 août</h2>
+							</caption>
+							<thead>
+								<tr>
+									<th></th>
+	 							</tr>
+							</thead>
+							<tbody>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 18:00</p>
+										<p>Only Lovers Left Alive (2014) - <em>Jim Jarmusch</em></p>
+										<button data-toggle="modal" href="#Film10" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film10">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Only Lovers Left Alive</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/OnlyAlive.jpg" alt="Only Lovers Left Alive" />
+														</div>
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Jim Jarmusch<br />
+															<strong>Type</strong> : Drame / Romance<br />
+															<strong>Année de sortie</strong> : 2014<br />
+															<strong>Durée</strong> : 2h03mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Dans les villes romantiques et désolées que sont Détroit et Tanger, Adam, un musicien underground, retrouve Eve, son amante. Tous 2 sont des vampires.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register10" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register10">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="active">
+									<td>
+										<p class="time">Heure de diffusion : 20:10</p>
+										<p>Big Fish (2003) - <em>Tim Burton</em></p>
+										<button data-toggle="modal" href="#Film11" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film11">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">X</button>
+														<h4 class="modal-title">Big Fish</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/BigFish.jpg" alt="Big Fish" />
+														</div>
+														<div class="film-description">
+															<p>
+															<strong>Réalisateur</strong> : Tim Burton<br />
+															<strong>Type</strong> : Aventure / Fantastique<br />
+															<strong>Année de sortie</strong> : 2003<br />
+															<strong>Durée</strong> : 2h05mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Will Bloom a toujours aimé les histoires loufoques de son père. Plusieurs années après leur dernière dispute, Will va voir son père en fin de vie.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register11" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register11">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Votre nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="success">
+									<td>
+										<p class="time">Heure de diffusion : 22:25</p>
+										<p>La Haine (1995) - <em>Mathieu Kassovitz</em></p>
+										<button data-toggle="modal" href="#Film12" class="btn btn-info">Synopsis</button>
+										<div class="modal fade" id="Film12">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button>
+														<h4 class="modal-title">La Haine</h4>
+													</div>
+													<div class="modal-body">
+														<div class="film-image">
+															<img src="assets/img/LaHaine.jpg" alt="La Haine" />
+														</div>
+														<div class="film-description">
+															<p>
+															<strong>Réaliseateur</strong> : Mathieu Kassovitz<br />
+															<strong>Type</strong> : Drame<br />
+															<strong>Année de sortie</strong> : 1995<br />
+															<strong>Durée</strong> : 1h38mn
+															</p>
+															<p>
+															<strong>Synopsis</strong> :<br />
+															Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils vont vivre la journée la plus importante de leur vie après une nuit d'émeutes provoquée par le passage à tabac d'Abdel Ichah par un inspecteur de police lors d'un interrogatoire.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button data-toggle="modal" href="#Register12" class="btn btn-success">S'inscrire</button>
+										<div class="modal fade" id="Register12">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">x</button>
+														<h4 class="modal-title">Prévenez-nous de votre venue</h4>
+													</div>
+													<div class="modal-body">
+														<form action="#">
+															<div class="form-group">
+																<label for="nom">Nom</label>
+																<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom">
+															</div>
+															<button type="submit" class="btn btn-default">Envoyer</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>				
 			</div>					
-		</div>
-	</div>
-</section>
+		</section>
 
-	<!-- FOOTER
-    ============================================================ -->
-	<footer>
-		<div class="container">
+		<!-- FOOTER
+	    ============================================================ -->
+		<footer>
 			<div class="row">
-				<div class="footer-left">
-					<div class="col-sm-3 col-xs-6">
-						<h4>Infos utiles</h4>
-						<p><strong>Films projetés :</strong><br />
-						<a href="films.html">Voir le calendrier de diffusion</a></p>
-						<p><strong>Dates et horaires :</strong><br />
-						Du 5 au 8 août au parc Monceau<br />
-						de 18h à minuit</p>
-						<p><strong>Tarifs :</strong><br />
-						Toutes les projections sont GRATUITES</p>
-					</div>
+				<div class="col-sm-3 col-xs-6 footer-left">
+					<h3>Infos utiles</h3>
+					<h5>Films projetés :</h5>
+					<p><a href="films.html">Voir le calendrier de diffusion</a></p>
+					<h5>Dates et horaires :</h5>
+					<p>Du 5 au 8 août au parc Monceau<br />de 18h à minuit</p>
+					<h5>Tarifs :</h5>
+					<p>Toutes les projections sont GRATUITES</p>
 				</div>
 				<div class="col-sm-6 hidden-xs">
 					<h2>Festival de films de Plein Air</h2>
@@ -866,25 +790,24 @@
 						<img src="assets/img/movie-time.png" alt="Movie time" />
 					</div>
 				</div>
-				<div class="footer-right">
-					<div class="col-sm-3 col-xs-6">
-						<h4>Nous contacter</h4>
-						<form method="post" traitement="#">
-							<p>
-								<label for="name">Votre nom</label><br />
-								<input type="text" name="name" id="name" />
-							</p>
-							<p>
-								<label for="message">Votre message</label><br />
-								<textarea name="message" id="message"></textarea>
-							</p>
-							<input type="submit" value="Envoyer" />
-						</form>
-					</div>
+				<div class="col-sm-3 col-xs-6 footer-right">
+					<h3>Nous contacter</h3>
+					<form method="post" traitement="#">
+						<p>
+							<label for="name">Votre nom</label><br />
+							<input type="text" name="name" id="name" />
+						</p>
+						<p>
+							<label for="message">Votre message</label><br />
+							<textarea name="message" id="message"></textarea>
+						</p>
+						<input type="submit" value="Envoyer" />
+					</form>
 				</div>
 			</div>
-		</div>
-	</footer>	
+		</footer>
+
+	</div>
 
 </body>
 
