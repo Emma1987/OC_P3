@@ -57,12 +57,13 @@
 							<h2>Liste des films</h2>
 						</caption>
 						<thead>
-							<th>Titre du film</th>
-							<th>Diffusion</th>
-							<th></th>
+							<th class="big">Titre du film</th>
+							<th class="small">Diffusion</th>
+							<th class="small"></th>
+							<th class="small">Nombre d'inscrits</th>
 						</thead>
 						<tbody>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Enter the void (2009) - <em>Gaspard Noé</em></p>
 								</td>
@@ -71,6 +72,9 @@
 								</td>
 								<td>
 									<p><a href="#">Modifier</a></p>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
 								</td>
 							</tr>
 							<tr class="active">
@@ -83,8 +87,11 @@
 								<td>
 									<p><a href="#">Modifier</a></p>
 								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
+								</td>
 							</tr>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Eraserhead (1978) - <em>David Lynch</em></p>
 								</td>
@@ -93,6 +100,9 @@
 								</td>
 								<td>
 									<p><a href="#">Modifier</a></p>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
 								</td>
 							</tr>
 							<tr class="active">
@@ -105,8 +115,11 @@
 								<td>
 									<p><a href="#">Modifier</a></p>
 								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
+								</td>
 							</tr>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Into the Wild (2007) - <em>Sean Penn</em></p>
 								</td>
@@ -115,6 +128,9 @@
 								</td>
 								<td>
 									<p><a href="#">Modifier</a></p>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
 								</td>
 							</tr>
 							<tr class="active">
@@ -127,8 +143,11 @@
 								<td>
 									<p><a href="#">Modifier</a></p>
 								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
+								</td>
 							</tr>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Dead Man (1995) - <em>Jim Jarmusch</em></p>
 								</td>
@@ -137,6 +156,9 @@
 								</td>
 								<td>
 									<p><a href="#">Modifier</a></p>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
 								</td>
 							</tr>
 							<tr class="active">
@@ -149,8 +171,11 @@
 								<td>
 									<p><a href="#">Modifier</a></p>
 								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
+								</td>
 							</tr>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Enemy (2014) - <em>Denis Villeneuve</em></p>
 								</td>
@@ -159,6 +184,9 @@
 								</td>
 								<td>
 									<p><a href="#">Modifier</a></p>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
 								</td>
 							</tr>
 							<tr class="active">
@@ -171,8 +199,11 @@
 								<td>
 									<p><a href="#">Modifier</a></p>
 								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
+								</td>
 							</tr>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Big Fish (2003) - <em>Tim Burton</em></p>
 								</td>
@@ -181,6 +212,9 @@
 								</td>
 								<td>
 									<p><a href="#">Modifier</a></p>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
 								</td>
 							</tr>
 							<tr class="active">
@@ -193,6 +227,9 @@
 								<td>
 									<p><a href="#">Modifier</a></p>
 								</td>
+								<td>
+									<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 0 participant(s)</button>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -204,15 +241,15 @@
 					<form class="add-film">
 							<div class="form-group">
 								<label for="add-title">Titre</label>
- 								<input type="text" class="form-control" id="add-title" placeholder="Titre du film" />
+								<input type="text" class="form-control" id="add-title" placeholder="Titre du film" />
 							</div>
 							<div class="form-group">
 								<label for="add-author">Auteur</label>
- 								<input type="text" class="form-control" id="add-author" placeholder="Auteur" />
+								<input type="text" class="form-control" id="add-author" placeholder="Auteur" />
 							</div>
 							<div class="form-group">
 								<label for="add-synopsis">Synopsis</label>
- 								 <textarea class="form-control" id="add-synopsis" placeholder="Synopsis"></textarea>
+								 <textarea class="form-control" id="add-synopsis" placeholder="Synopsis"></textarea>
 							</div>
 							<div class="form-group">
 								<label for="add-diffusion">Diffusion</label>
@@ -231,11 +268,11 @@
 							<h2>Liste des actualités</h2>
 						</caption>
 						<thead>
-							<th>Actualité</th>
+							<th>Actualités</th>
 							<th></th>
 						</thead>
 						<tbody>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Visite officielle de Denis Villeneuve</p>
 								</td>
@@ -251,7 +288,7 @@
 									<p><a href="#">Modifier</a></p>
 								</td>
 							</tr>
-							<tr class="success">
+							<tr class="info">
 								<td>
 									<p>Le Festival des Films de Plein Air aura lieu !</p>
 								</td>
@@ -273,7 +310,7 @@
 							</div>
 							<div class="form-group">
 								<label for="content-news">Contenu</label>
- 								 <textarea class="form-control" id="content-news" placeholder="Contenu de l'actualité"></textarea>
+								 <textarea class="form-control" id="content-news" placeholder="Contenu de l'actualité"></textarea>
 							</div>
 							<div class="form-group">
 								<button type="submit" class="btn btn-default">Ajouter</button>

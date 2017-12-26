@@ -1,7 +1,7 @@
 /* PAGES HEADER 
 ================================================ */
 .news-header, .films-header, .contact-header {
-	height: 350px;
+	height: 300px;
 	background-image: url('../img/header.png');
 	display: table-cell;
 	vertical-align: middle;
@@ -30,11 +30,11 @@
 .single-news {
 	margin-bottom: 20px;
 	padding: 18px;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
 
-.single-news h2 {
+.single-news h2, #newsletter h2 {
 	background-color: rgba(119, 116, 115, 0.3);
 	text-align: center;
 }
@@ -53,7 +53,18 @@
 	font-style: italic;
 }
 
-/* FILMS
+#newsletter {
+	position: sticky;
+	top: 100px;
+	right: 30px;
+	padding: 20px;
+}
+
+#newsletter form label {
+	padding-bottom: 0;
+}
+
+/* PAGE FILMS
 ================================================ */
 .films-calendar .table, .table h2 {
 	text-align: center;
@@ -118,15 +129,12 @@
 	padding: 50px 0;
 }
 
-.contact-glyphicon {
-	display: block;
-	width: 100px;
-	height: 50px;
-	float: left;
-}
-
 .contact-adress {
 	margin: 30px 0 0 30px;
+}
+
+.contact-adress dd {
+	padding-bottom: 30px;
 }
 
 .contact-content {
@@ -151,4 +159,16 @@
 
 #add-film textarea, #add-news textarea {
   height: 150px;
+}
+
+.admin-content .btn {
+	margin-top: 0px;
+}
+
+.admin-content .big {
+	width: 55%;
+}
+
+.admin-content .small {
+	width: 15%;
 }
